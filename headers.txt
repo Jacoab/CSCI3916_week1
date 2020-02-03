@@ -1,0 +1,23 @@
+##Response Header##
+Expires: Timestamp - This gives the date/time the response is considered stale
+Date: Timestamp - This gives the date/time the response was recieved
+Cache-Control: Specifies rules for caching the request and response
+Etag: ID string - Identifies a specific resource version
+Vary: Determines how to match future response headers to decide if it should be cached
+Content-Type: Gives the resources media type
+Content-Encoding: Indicates how the content is encoded (ex. the content is zipped with gzip)
+X-Content-Type-Options: Specifies wether to opt out of MIME type sniffing
+X-Frame-Options: Specifies wether content is embedded in another site in order to avoid clickjacking
+X-XSS-Protection: Stops pages from loading when a XSS attack is detected
+Server: Information about how the server handles requests
+Alt-Svc: A custom header
+Transfer-Encoding: Specifies the form of encoding used to transfer the entity to the user
+
+##Request Header##
+Accept: Specifies a set of media types that are acceptable the response
+Accept-Encoding: Specifies the acceptable type of encoding for the response
+Accept-Language: Specifies the acceptable language of the response headers
+Connection: Allows the user to specify the options that are desired for this particular communication
+Host: Specifies the internet host and the port of the request header
+Upgrade-Insecure-Requests: Sends a signal to the server requesting encrypted communications
+User-Agent: contains information about the user agent originating the request
